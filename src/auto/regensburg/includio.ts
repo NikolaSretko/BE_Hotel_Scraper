@@ -9,7 +9,7 @@ import { includioConfig } from '../../DAO/additionalDataConfig';
 
 const includio = () => {
     // Definieren der Zeiten, zu denen der Scraping-Job ausgeführt werden soll
-    const times = ['0 5 * * *', '15 0 * * *'];
+    const times = ['0 5 * * *', '20 0 * * *'];
     // Maximale Anzahl der Versuche, um eine Endlosschleife zu vermeiden
     const maxAttempts = 5;
 
