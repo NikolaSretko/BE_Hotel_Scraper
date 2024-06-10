@@ -14,7 +14,7 @@ export const getIncludio = {
         const url = utils.generateUrl();
 
         try {
-            const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox']});
+            const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox','--no-sandbox']});
             const page = await browser.newPage();
             await page.goto(url, { waitUntil: 'networkidle2' });
 
