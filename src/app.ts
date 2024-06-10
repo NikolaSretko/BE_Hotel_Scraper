@@ -24,6 +24,10 @@ app.use(express.json());
 autoScrape.regensburg.includio();
 
 // Routen definieren
+app.get('/', (req, res) => {
+    res.send('Seerver is running!');
+});
+
 app.use('/api/scrape', ScrapeRouter);
 
 
